@@ -1,0 +1,17 @@
+<h1>Articles#index</h1>
+
+<h1> Hello Rails </h1>
+<ol>
+<% @articles.each do |article|  %>
+    <li>
+        Title: <%= link_to  article.title, article  %><br>
+        <ul><br>
+            <li>
+                Body: <%=  article.body  %>
+            </li>
+        </ul>
+    </li>
+<br>
+<% end %>
+</ol>
+
